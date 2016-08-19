@@ -1,4 +1,4 @@
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1000px) {
     .slider__left {
         left: 1%;
     }
@@ -8,7 +8,7 @@
     }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1000px) {
 
 }
 
@@ -200,7 +200,9 @@
     .menu--media li, .description p {
         display: none;
     }
-
+    body{
+        background: none;
+    }
     .container {
         max-width: 440px;
     }
@@ -470,6 +472,10 @@
         margin-bottom: 52px;
     }
 
+
+    .menu--footer .menu__element{
+        margin-right: 6px;
+    }
     .footer__col h2 {
         font-size: 30px;
     }
