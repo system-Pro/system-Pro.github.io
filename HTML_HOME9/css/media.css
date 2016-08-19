@@ -527,7 +527,9 @@
     .menu li, .description p, .picture, .footer__content, .footer__row {
         display: none;
     }
-
+    body{
+        background: none;
+    }
     header {
         height: 516px;
     }
@@ -549,8 +551,9 @@
     }
 
     .description {
+        box-sizing: border-box;
         margin-left: 58px;
-        width: 100%;
+        width: 244px;
     }
 
     .description h2 {
@@ -603,6 +606,8 @@
     }
 
     .article__testimonials {
+        box-sizing: border-box;
+        width: 220px;
         padding-top: 26px;
     }
 
