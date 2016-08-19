@@ -7,9 +7,12 @@ header {
     background-position: center;
     background-size: cover;
 }
-
+header, .about, article, .brands, footer{
+    overflow: hidden;
+}
 .header__top {
     padding-top: 62px;
+    margin-bottom: 160px;
 }
 
 .container {
@@ -86,7 +89,7 @@ nav {
 
 .header__slider {
     position: relative;
-    margin-top: 160px;
+    /*margin-top: 160px;*/
     height: 400px;
     background: rgba(0, 0, 0, 0.2);
 }

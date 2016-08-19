@@ -9,7 +9,6 @@
 }
 
 @media only screen and (max-width: 1000px) {
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -37,12 +36,18 @@
         margin-right: 47.5px;
     }
 
+    .header__top {
+        margin-bottom: 125px;
+    }
+
     .header__slider {
-        margin-top: 125px;
+        margin-top: 0;
     }
 
     .picture img {
         padding-right: 15px;
+        right: 0px;
+        top: -22px;
     }
 
     .description {
@@ -52,30 +57,25 @@
         margin-left: 24px;
     }
 
-    .description h2 {
-        padding-top: 2px;
-        font-size: 48px;
-        white-space: nowrap;
-    }
+        .description h2 {
+            padding-top: 2px;
+            font-size: 48px;
+            white-space: nowrap;
+        }
 
-    .description h3 {
-        white-space: nowrap;
-        font-size: 24px;
-    }
+        .description h3 {
+            white-space: nowrap;
+            font-size: 24px;
+        }
 
-    .description p {
-        font-size: 16px;
-        line-height: 26px;
-    }
+        .description p {
+            font-size: 16px;
+            line-height: 26px;
+        }
 
     .picture {
         right: 0;
-        width: 400px;
-    }
-
-    .picture img {
-        right: 0px;
-        top: -22px;
+        width: 36%;
     }
 
     .header__slider .togglebox--slider {
@@ -104,7 +104,6 @@
 
     .about__center .about__wrapper {
         margin-left: 1px;
-
     }
 
     .about__right .about__wrapper {
@@ -136,6 +135,9 @@
         top: 6px;
     }
 
+    .article__row{
+        overflow: hidden;
+    }
     .article__block {
         margin-left: 24px;
         position: relative;
@@ -152,15 +154,15 @@
         width: 250px;
     }
 
-    .article__testimonials h2 {
-        font-size: 24px;
-        width: 100px;
-        line-height: 24px;
-    }
+        .article__testimonials h2 {
+            font-size: 24px;
+            width: 100px;
+            line-height: 24px;
+        }
 
-    .article__testimonials p {
-        height: 143px;
-    }
+        .article__testimonials p {
+            height: 143px;
+        }
 
     .article__blog p {
         width: 255px;
@@ -194,15 +196,20 @@
         height: 144px;
         margin-top: 0px;
     }
+    footer, .about{
+        overflow: hidden;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     .menu--media li, .description p {
         display: none;
     }
-    body{
+
+    body {
         background: none;
     }
+
     .container {
         max-width: 440px;
     }
@@ -210,6 +217,10 @@
     header {
         height: 548px;
     }
+
+        header .header__top {
+            margin-bottom: 85px;
+        }
 
     .menu__link:after {
         width: 0%;
@@ -229,7 +240,6 @@
         width: 246px;
         height: 257px;
         margin: 0 auto;
-
         border: 1px solid transparent;
     }
 
@@ -239,62 +249,62 @@
         padding-top: 5px;
     }
 
-    .menu--media:hover {
-        height: auto;
-        padding-top: 5px;
-        border: 1px solid #051116;
-        -webkit-border-radius: 9px;
-        -moz-border-radius: 9px;
-        border-radius: 9px;
-        background-color: #6d507a;
-        background-color: rgba(54, 41, 62, .9);
-        -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-        -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-        box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-    }
+        .menu--media:hover {
+            height: auto;
+            padding-top: 5px;
+            border: 1px solid #051116;
+            -webkit-border-radius: 9px;
+            -moz-border-radius: 9px;
+            border-radius: 9px;
+            background-color: #6d507a;
+            background-color: rgba(54, 41, 62, .9);
+            -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+            -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+        }
 
-    .menu--media > .menu__element {
-        line-height: 39px;
-        display: block;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 1px;
-        text-align: center;
-        border-top: 1px solid #523e5a;
-        border-bottom: 1px solid #36283e;
-    }
+        .menu--media > .menu__element {
+            line-height: 39px;
+            display: block;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 1px;
+            text-align: center;
+            border-top: 1px solid #523e5a;
+            border-bottom: 1px solid #36283e;
+        }
 
-    .menu--media > .menu__element:first-child {
-        padding-top: 1px;
-        border-top: 0;
-    }
+            .menu--media > .menu__element:first-child {
+                padding-top: 1px;
+                border-top: 0;
+            }
 
-    .menu--media > .menu__element:last-child {
-        padding-bottom: 1px;
-        border-bottom: 0;
-    }
+            .menu--media > .menu__element:last-child {
+                padding-bottom: 1px;
+                border-bottom: 0;
+            }
 
-    .menu--media > .menu__element:hover {
-        padding-bottom: 0;
-        cursor: pointer;
-        border-bottom: 2px solid #edbfff;
-        background-color: rgba(0, 0, 0, .3);
-    }
+            .menu--media > .menu__element:hover {
+                padding-bottom: 0;
+                cursor: pointer;
+                border-bottom: 2px solid #edbfff;
+                background-color: rgba(0, 0, 0, .3);
+            }
 
-    .menu--media > .menu__element:hover > .menu__link {
-        border-bottom: 0;
-    }
+                .menu--media > .menu__element:hover > .menu__link {
+                    border-bottom: 0;
+                }
 
     .menu__link {
         padding: 2px 5px;
         text-decoration: none;
     }
 
-    .menu__link:hover {
-        padding: 2px 5px;
-        text-decoration: none;
-        border-bottom: 2px solid transparent;
-    }
+        .menu__link:hover {
+            padding: 2px 5px;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+        }
 
     .menu--media > .menu__element:first-child {
         padding-top: 1px;
@@ -312,12 +322,12 @@
         text-align: center;
     }
 
-    .menu--media li:first-child {
-        display: block;
-    }
+        .menu--media li:first-child {
+            display: block;
+        }
 
     .header__slider {
-        margin-top: 85px;
+        margin-top: 0;
         height: 246px;
         padding-right: 15px;
     }
@@ -341,29 +351,28 @@
         width: 45%;
     }
 
-    .description h2 {
-        font-size: 36px;
-    }
+        .description h2 {
+            font-size: 36px;
+        }
 
-    .description h3 {
-        font-size: 18px;
-        width: 195px;
-    }
+        .description h3 {
+            font-size: 18px;
+            width: 195px;
+        }
 
     .picture {
         width: 45%;
         height: 245px;
     }
 
-    .picture img {
-        right: 2px;
-        top: -8px;
-    }
+        .picture img {
+            right: 2px;
+            top: -8px;
+        }
 
     .header__slider .togglebox--slider {
         bottom: -8px;
         left: 42%;
-
     }
 
     .about {
@@ -376,17 +385,17 @@
         padding: 0;
     }
 
-    .about__col .about__wrapper {
-        width: 80%;
-        margin: 0;
-        padding: 0;
-        margin-right: 0;
-        margin-bottom: 30px;
-    }
+        .about__col .about__wrapper {
+            width: 80%;
+            margin: 0;
+            padding: 0;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
 
-    .about__col h2 {
-        font-size: 24px;
-    }
+        .about__col h2 {
+            font-size: 24px;
+        }
 
     .about__text {
         width: 80%;
@@ -417,7 +426,8 @@
     }
 
     .article__block {
-        width: 416px;
+        box-sizing: border-box;
+        width: 92%;
         height: 273px;
     }
 
@@ -425,16 +435,16 @@
         padding-top: 30px;
     }
 
-    .article__testimonials h2 {
-        font-size: 30px;
-        width: 100%;
-        margin-bottom: 15px;
-    }
+        .article__testimonials h2 {
+            font-size: 30px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
 
-    .article__testimonials p {
-        width: 350px;
-        height: 166px;
-    }
+        .article__testimonials p {
+            /*width: 350px;*/
+            height: 166px;
+        }
 
     .togglebox {
         left: 39%;
@@ -452,7 +462,6 @@
 
     .brands {
         height: 230px;
-
     }
 
     .footer__content {
@@ -473,9 +482,10 @@
     }
 
 
-    .menu--footer .menu__element{
+    .menu--footer .menu__element {
         margin-right: 6px;
     }
+
     .footer__col h2 {
         font-size: 30px;
     }
@@ -514,10 +524,10 @@
         padding-top: 46px;
     }
 
-    .footer_colMenu li {
-        display: inline-block;
-        margin-right: 17.5px;
-    }
+        .footer_colMenu li {
+            display: inline-block;
+            margin-right: 17.5px;
+        }
 
     .footer__colDesigned {
         padding-top: 28px;
@@ -533,17 +543,18 @@
     .menu li, .description p, .picture, .footer__content, .footer__row {
         display: none;
     }
-    body{
+
+    body {
         background: none;
     }
+
     header {
         height: 516px;
     }
 
     .header__slider {
         background: none;
-        height: 50px;
-        margin-top: 85px;
+        height: auto;
     }
 
     .slider__left {
@@ -559,18 +570,18 @@
     .description {
         box-sizing: border-box;
         margin-left: 58px;
-        width: 244px;
+        width: 92%;
     }
 
-    .description h2 {
-        line-height: 36px;
-        letter-spacing: -0.5px;
-    }
+        .description h2 {
+            line-height: 36px;
+            letter-spacing: -0.5px;
+        }
 
-    .description h3 {
-        letter-spacing: -0.2px;
-        width: 202px;
-    }
+        .description h3 {
+            letter-spacing: -0.2px;
+            width: 202px;
+        }
 
     .header__slider .togglebox--slider {
         bottom: 34px;
@@ -594,7 +605,6 @@
 
     .about__read {
         padding-right: 10px;
-
     }
 
     .about__settings, .about__info, .about__music {
@@ -617,34 +627,33 @@
         padding-top: 26px;
     }
 
-    .article__testimonials h2 {
-        font-size: 24px;
-        width: 120px;
-        margin-bottom: 5px;
-    }
+        .article__testimonials h2 {
+            font-size: 24px;
+            width: 120px;
+            margin-bottom: 5px;
+        }
 
-    .article__testimonials p {
-        width: 184px;
-        height: 162px;
-
-    }
+        .article__testimonials p {
+            width: 184px;
+            height: 162px;
+        }
 
     .article__blog {
         margin-top: 86px;
         margin-left: 10px;
     }
 
-    .article__blog h3 {
-        width: 155px;
-        white-space: nowrap;
-        overflow: hidden;
-    }
+        .article__blog h3 {
+            width: 155px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
 
-    .article__blog p {
-        width: 215px;
-        white-space: nowrap;
-        overflow: hidden;
-    }
+        .article__blog p {
+            width: 215px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
 
     .read_more {
         padding-right: 15px;
