@@ -1,0 +1,232 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+.container {
+    background-color: #eee;
+    /*width: 1215px;*/
+    margin: 0 auto;
+}
+/*MENU*/
+.menu {
+    background-image: url('../img/top_menu.jpg');
+    background-size: cover;
+    /*height: 36px;*/
+    text-align: right;
+    color: white;
+    position: relative;
+}
+
+    .menu ul,
+    .menu li,
+    .menu div,
+    .menu a {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        line-height: 36px;
+        -moz-transition: .2s ease-in-out;
+        -o-transition: .2s ease-in-out;
+        -webkit-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+    }
+    /*RIGHT MENU*/
+    .menu .right_button {
+        margin-right: 20px;
+    }
+
+.right_button > div:hover {
+    background: linear-gradient(to bottom, #51b1dc, #2e7ac4);
+}
+
+.right_button > div:focus {
+    background: linear-gradient(to bottom, #51b1dc, #2e7ac4);
+}
+
+.offers a {
+    position: relative;
+    padding-left: 22px;
+    padding-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.offers img {
+    width: 18px;
+    position: absolute;
+    bottom: 9px;
+    left: 2px;
+}
+
+.right_button .authorization {
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+    .right_button .authorization a {
+        color: white;
+    }
+
+.line {
+    display: inline;
+    position: absolute;
+    top: 4px;
+    width: 1px;
+    background: #56a2dc;
+    height: 25px;
+}
+/*LEFT MENU*/
+.left_menu a {
+    text-decoration: none;
+    color: #60b5ed;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.left_menu li:hover {
+    background: #4eabda;
+}
+
+.left_menu li:focus {
+    background: #4eabda;
+}
+
+.left_menu li:hover a {
+    color: white;
+}
+
+.left_menu li:focus a {
+    color: white;
+}
+/*CONTENT*/
+.content {
+    background-image: url('../img/BG.jpg');
+        background-size: cover;
+    height: 1028px;
+    position: relative;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+
+.my_form {
+    width: 560px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+.description {
+    background: rgba(0,0,0,0.6);
+    text-align: center;
+    height: 60px;
+    color: white;
+    margin-bottom: 2px;
+}
+
+    .description span {
+        line-height: 60px;
+        font-size: 24px;
+    }
+
+.wrap_form {
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    min-height: 100%;
+}
+
+.form_field {
+    margin: 0 auto;
+    padding: 30px 0 20px 0;
+    width: 275px;
+    height: 100%;
+    min-height: 100%;
+}
+
+.form_line {
+    background: url('../img/form_line.png') center no-repeat;
+    text-align: center;
+    margin-top: 20px;
+    color: #999999;
+}
+
+.form_field form > input[type=text],
+.form_field form > input[type=email],
+.form_field form > input[type=password] {
+    width: 100%;
+    margin-top: 20px;
+    background: #0f0e0e;
+    color: white;
+    padding-left: 10px;
+    height: 35px;
+    border: none;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+    .form_field form > input[type=text]:hover,
+    .form_field form > input[type=email]:hover,
+    .form_field form > input[type=password]:hover {
+        background: #1b5288;
+        box-shadow: 0px 0px 3px 2px rgba(105,155,205,1);
+    }
+
+    .form_field form > input[type=text]:focus,
+    .form_field form > input[type=email]:focus,
+    .form_field form > input[type=password]:focus {
+        background: #1b5288;
+        /*box-shadow: 0px 0px 3px 2px rgba(105,155,205,1);*/
+    }
+
+input:focus {
+    border: none;
+    color: white;
+}
+
+.form_field form > label {
+    color: #cccccc;
+    font-size: 13px;
+}
+
+    .form_field form > label input {
+        margin: 20px 0;
+    }
+
+.form_field form {
+    text-align: center;
+}
+
+    .form_field form > input[type=submit] {
+        background: linear-gradient(to bottom, #50aedb, #2e7ac4);
+        margin-bottom: 10px;
+        border: none;
+        color: white;
+        border-radius: 3px;
+        height: 35px;
+    }
+
+        .form_field form > input[type=submit]:hover {
+            cursor: pointer;
+            background: #2e7ac4;
+        }
+
+        .form_field form > input[type=submit]:focus {
+            cursor: pointer;
+            background: #2e7ac4;
+        }
+
+.form_field p {
+    font-size: 11px;
+    color: #cccccc;
+}
+/*CLEARFIX*/
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
