@@ -26,11 +26,13 @@
             btnReset.disabled = false;
             isStart = 1;
         } else if (isStart == 1) {
+            clearInterval(interval);
             btnStart.classList.remove('pause');
             btnStart.classList.add('cont');
             btnStart.value = 'Cont..';
             isStart = 2;
         } else if (isStart == 2) {
+            interval = setInterval(timer, 33);
             btnStart.classList.remove('cont');
             btnStart.classList.add('pause');
             btnStart.value = 'Pause';
