@@ -26,6 +26,7 @@ body {
 
 .time--split {
     color: #95a5a6;
+    margin: 15px 0;
 }
 
 .wrapper {
@@ -45,9 +46,10 @@ body {
     color: #95a5a6;
 }
 
-.time--split {
-    margin: 15px 0;
+input:focus {
+    outline: none;
 }
+
 
 .control {
     text-align: center;
