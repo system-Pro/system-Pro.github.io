@@ -24,11 +24,6 @@ body {
     color: #3498db;
 }
 
-.time--split {
-    color: #95a5a6;
-    margin: 15px 0;
-}
-
 .wrapper {
     background-color: #fafafa;
     width: 600px;
@@ -44,6 +39,11 @@ body {
     text-align: center;
     font-size: 48px;
     color: #95a5a6;
+}
+
+.time--split {
+    color: #95a5a6;
+    margin: 15px 0;
 }
 
 input:focus {
