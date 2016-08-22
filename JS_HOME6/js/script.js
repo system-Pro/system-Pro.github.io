@@ -72,43 +72,41 @@
         elemMSec.textContent = '000';
     }
     function timer() {
-        if (isStart != 2) {
-            mSec += 33;
-            if (mSec > 999) {
-                mSec -= 1000;
-                sec++;
-                if (sec > 59) {
-                    sec -= 60;
-                    min++;
-                    if (min > 59) {
-                        min -= 60;
-                        hour++;
-                        if (hour < 10) {
-                            elemHour.textContent = '0' + hour;
-                        } else {
-                            elemHour.textContent = hour;
-                        }
-                    }
-                    if (min < 10) {
-                        elemMin.textContent = '0' + min;
+        mSec += 33;
+        if (mSec > 999) {
+            mSec -= 1000;
+            sec++;
+            if (sec > 59) {
+                sec -= 60;
+                min++;
+                if (min > 59) {
+                    min -= 60;
+                    hour++;
+                    if (hour < 10) {
+                        elemHour.textContent = '0' + hour;
                     } else {
-                        elemMin.textContent = min;
+                        elemHour.textContent = hour;
                     }
                 }
-                if (sec < 10) {
-                    elemSec.textContent = '0' + sec;
+                if (min < 10) {
+                    elemMin.textContent = '0' + min;
                 } else {
-                    elemSec.textContent = sec;
+                    elemMin.textContent = min;
                 }
             }
-
-            if (mSec < 10) {
-                elemMSec.textContent = '00' + mSec;
-            } else if (mSec < 100) {
-                elemMSec.textContent = '0' + mSec;
+            if (sec < 10) {
+                elemSec.textContent = '0' + sec;
             } else {
-                elemMSec.textContent = mSec;
+                elemSec.textContent = sec;
             }
+        }
+
+        if (mSec < 10) {
+            elemMSec.textContent = '00' + mSec;
+        } else if (mSec < 100) {
+            elemMSec.textContent = '0' + mSec;
+        } else {
+            elemMSec.textContent = mSec;
         }
         //console.log(hour + ':' + min + ':' + sec + '.' + mSec);
     }
