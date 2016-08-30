@@ -51,7 +51,7 @@ input:focus {
 
 .myform label {
     cursor: pointer;
-    padding-right: 200px;
+    margin-right: 200px;
     display: block;
     line-height: 20px;
     vertical-align: middle;
@@ -65,8 +65,8 @@ input[type='text'] {
     display: none;
     font-size: 12px;
     position: absolute;
-    padding: 0 10px;
-    border-radius: 6px;
+    padding-left: 20px;
+    border-radius: 15px;
     width: 150px;
     right: 35px;
     top: -5px;
@@ -93,7 +93,7 @@ input[type='text'] {
     color: #f39c12;
 }
 
-    .label1 input:focus{
+    .label1 input:focus {
         border: 1px solid #f39c12;
         box-shadow: #f39c12 0px 0px 1px;
     }
@@ -102,7 +102,7 @@ input[type='text'] {
     color: #3498db;
 }
 
-    .label2 input:focus{
+    .label2 input:focus {
         border: 1px solid #3498db;
         box-shadow: #3498db 0px 0px 1px;
     }
@@ -111,7 +111,7 @@ input[type='text'] {
     color: #18bc9c;
 }
 
-    .label3 input:focus{
+    .label3 input:focus {
         border: 1px solid #18bc9c;
         box-shadow: #18bc9c 0px 0px 1px;
     }
