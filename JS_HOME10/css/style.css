@@ -1,12 +1,58 @@
-﻿body {
-    font-family: sans-serif;
+@import '//fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic';
+
+body {
+    background: #F0EFE7;
+    margin: 0;
+    padding: 0;
+    color: #4E443C;
+    /*height: 150vh;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: normal;
+    text-rendering: optimizelegibility;
+}
+
+h1 {
+    color: #4E443C;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2, h2 a {
+    color: #F14E32;
+}
+
+h3, h3 a {
+    color: #0388A6;
+}
+
+a {
+    color: #0388A6;
+    text-decoration: none;
+}
+
+pre {
+    border: 1px solid #000;
+    overflow-x: auto;
+    background: #222;
+    color: #fff;
+    text-shadow: none;
 }
 
 .wrapper {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 70px;
+    max-width: 620px;
+    padding: 0 20px 20px 20px;
+    margin: auto;
 }
+
+.jcarousel--wrapper {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 
 nav {
     background-color: #FF6464;
@@ -58,6 +104,7 @@ nav a {
 }
 
 .sub-menu {
+    z-index: 999;
     background-color: #E14B4B;
     position: absolute;
     /*display: none;*/
