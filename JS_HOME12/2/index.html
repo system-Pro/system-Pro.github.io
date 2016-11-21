@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JS HOME12_2</title>
+	<meta charset="utf-8" />
+    <!--<link href="css/normalize.css" rel="stylesheet" />-->
+    <!--<link href="css/style.css" rel="stylesheet" />-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <script type="text/template" id="template">
+        <% for (var i = 0; i < data.length; i++) { %>
+        <h3><%= i+1 %> student</h3>
+        <p>Name: <%= data[i].name %></p>
+        <p>Age: <%= data[i].age %></p>
+        <p>Phone: <%= data[i].phone %></p>
+        <p>&nbsp;</p>
+        <% }; %>
+    </script>
+
+</body>
+</html>

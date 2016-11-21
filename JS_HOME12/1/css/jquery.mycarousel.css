@@ -1,0 +1,42 @@
+﻿.mycarousel{
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.carousel__hider{
+    width: 600px;
+    overflow: hidden;
+    float: left;
+    margin: 0 15px;
+}
+
+.carousel__list{
+    list-style: none;
+    width: 10000px;
+    padding: 0px;
+    position: relative;
+}
+
+.carousel__element{
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+
+.carousel__img{
+    max-width: 100px;
+}
+.carousel__left,
+.carousel__right{
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 40px;
+}
+.carousel__left:hover,
+.carousel__right:hover{
+    cursor: pointer;
+}
