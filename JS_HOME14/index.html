@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Test vs LocalStorage and Template</title>
+    <meta charset="utf-8" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <script type="text/template" id="test">
+        <form class="test__form" method="GET">
+            <h3 class="test__title"><%= data[0].titleText %></h3>
+            <ul class="test__list">
+                <% for(var i = 1; i < data.length; i++) { %>
+                <li>
+                    <%= data[i].question %>
+                    <% for(var j = 1; j <= data[0].length; j++) { %>
+                    <label>
+                        <input type="checkbox" name="<%= i %>" value="<%= j %>" />
+                        <%= data[i].answers[j-1].answerText %>
+                    </label>
+                    <% } %>
+                    <span>&nbsp;</span>
+                </li>
+                <% }; %>
+            </ul>
+            <p class="test__subWrapper">
+                <input class="test__submit" type="submit" value="<%= data[0].submitText %>" />
+            </p>
+        </form>
+        <div class="overlay"></div>
+        <div class="modal">
+            <h1>Твой результат:</h1>
+            <p></p>
+            <input type="button" value="Закрыть" />
+        </div>
+</script>
+</body>
+</html>
