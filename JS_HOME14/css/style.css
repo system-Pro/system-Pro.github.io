@@ -4,6 +4,7 @@
 
 
 .test__form {
+    position: relative;
     width: 800px;
     min-height: 400px;
     margin: 20px auto;
@@ -69,9 +70,10 @@
     background-color: white;
     text-align: center;
 }
-.modal > p{
-    margin: 30px 0;
-}
+
+    .modal > p {
+        margin: 30px 0;
+    }
 
     .modal > input[type = button] {
         width: 100px;
@@ -86,3 +88,25 @@
             background: #71a9db;
             border: 1px solid rgba(0,0,0,0.8);
         }
+
+.language {
+    position: absolute;
+    display: inline-block;
+    top: 55px;
+    right: 25px;
+}
+
+.language a{
+    text-decoration: none;
+    color: #71a9db;
+}
+.language a:visited{
+    color: #71a9db;
+}
+
+.language a.disabled {
+    pointer-events: none; /* делаем ссылку некликабельной */
+    cursor: default; /* устанавливаем курсор в виде стрелки */
+    color: #999; /* цвет текста для нективной ссылки */
+}
+

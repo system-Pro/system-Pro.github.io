@@ -30,13 +30,16 @@
             <p class="test__subWrapper">
                 <input class="test__submit" type="submit" value="<%= data[0].submitText %>" />
             </p>
+            <div class="language">
+                <a href="" class="en">EN</a> / <a href="" class="ru">RU</a>
+            </div>
+            <div class="overlay"></div>
+            <div class="modal">
+                <h1><%= data[0].dialogTitle %>:</h1>
+                <p></p>
+                <input type="button" value="<%= data[0].dialogText %>" />
+            </div>
         </form>
-        <div class="overlay"></div>
-        <div class="modal">
-            <h1>Твой результат:</h1>
-            <p></p>
-            <input type="button" value="Закрыть" />
-        </div>
 </script>
 </body>
 </html>
