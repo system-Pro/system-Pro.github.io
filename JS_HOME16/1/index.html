@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Riffsy - Picture Search</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
+    <script src="js/script.js"></script>
+    <style>
+        .image {
+            text-align: center;
+            height: 300px;
+        }
+
+            .image img {
+                max-width: 20%;
+                max-height: 300px;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 15px;
+            }
+            p{
+                line-height: 32px;
+            }
+            .loader{
+                margin: 0 15px;
+                display: none;
+            }
+    </style>
+</head>
+<body>
+    <p>
+        <input type="text" class="text-field" placeholder="Some text, eng word." />
+        <input type="submit" value="Search" class="mbtn" />
+        <img src="img/ajax-loader.gif" class="loader" alt="gif"/>
+    </p>
+    <div class="image"></div>
+</body>
+</html>
