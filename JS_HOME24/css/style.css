@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+a, input{
+  outline: none;
+}
+body{
+  padding: 20px;
+  background: #eee;
+}
+.wrapper{
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 560px;
+  min-width: 440px;
+  padding: 10px;
+}
+.item-li, .controlls{
+  list-style-type: none;
+  font-size: 0;
+  position: relative;
+}
+.item-value,
+.item-add,
+.item-edit,
+.item-delete{
+  display: inline-block;
+  margin: 10px;
+  border-radius: 5px;
+  line-height: 25px;
+  /*width: 50%;*/
+}
+.item-value,
+.item-edit{
+  /*position: relative;*/
+  border: 1px solid rgba(49, 126, 172, 0.5);
+  font-size: 16px;
+  width: 80%;
+  padding-left: 15px;
+  color: #317eac;
+}
+.item-add,
+.item-delete{
+  border: none;
+  width: 65px;
+  text-align: center;
+  background: red;
+  color: #ffffff;
+  background: #d9262c;
+  font-size: 14px;
+}
+.item-add,
+.item-delete:hover{
+  cursor: pointer;
+  background: #791014;
+}
+
+.item-value{
+  /*border-color: #317eac;*/
+  color: white;
+}
+.item-value:focus{
+  background: rgba(49, 126, 172, 0.5);
+}
+.item-add{
+  background: #7fb642;
+}
+.item-add:hover{
+  background: #476723;
+}
+
+.edit{
+  font-size: 18px;
+  position: absolute;
+  right: 110px;
+  top: 10px;
+  color: #843300;
+}
+.edit:hover{
+  color: #f26004;
+  cursor: auto;
+}
