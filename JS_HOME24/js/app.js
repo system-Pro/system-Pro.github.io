@@ -1,33 +1,20 @@
-// requirejs.config({
-//     paths: {
-//         'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery'
-//         // 'auth': 'node_modules/jquery/dist/jquery.min.js'
-//     },
-//     shim: {
-//         'jquery': {
-//             exports: 'jQuery'
-//         }
-//     }
-// });
+requirejs.config({
+    paths: {
+        'jquery': '../node_modules/jquery/dist/jquery.min'
+    }
+});
 
 require(
     [
-        'Model',
-        'View',
-        'Controller'
+        'model',
+        'view',
+        'controller',
+        'jquery'
     ],
-    function (Model, View, Controller) {
-        // console.log("$", $);
-        // console.log("module1", module1);
-        // console.log("module2", someMethod);
-        // module1.sayHello();
-        // module2.someMethod();
-        // var firstToDoList = ['leart javascript', 'learn html', 'make coffe'];
-        // console.log(Model);
-        // console.log(View);
-        // console.log(Controller);
-        // var model = new Model.Model(firstToDoList);
-        // var view = new View.View(model);
-        // var controller = new Controller.Controller(model, view);
+    function(Model, View, Controller, $) {
+        var firstToDoList = ['Learn JavaScript', 'Learn ES6', 'Learn Angular'];
+        var model = new Model(firstToDoList);
+        var view = new View(model);
+        var controller = new Controller(model, view);
     }
 );
