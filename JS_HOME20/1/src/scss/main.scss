@@ -242,7 +242,7 @@ nav{
     &__third{
         color: white;
     }
-}    
+}
 .about{
     margin-top: 70px;
     display: flex;
@@ -366,7 +366,7 @@ nav{
                 image: url("../img/ser0.png");
                 repeat: no-repeat;
                 position: center center;
-            } 
+            }
         }
         &:before{
             content: ' ';
@@ -543,6 +543,8 @@ nav{
             background: #f4b60d;
             border: none;
             color: white;
+            pointer-events: none;
+            cursor: default;
         }
     }
     &__symbol{

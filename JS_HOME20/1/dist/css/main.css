@@ -978,10 +978,12 @@ nav
 }
 .myAccordion__head--active
 {
+    cursor: default; 
     -webkit-transition: .2s ease-in-out;
             transition: .2s ease-in-out;
+    pointer-events: none;
 
-    color: white; 
+    color: white;
     border: none;
     background: #f4b60d;
 }

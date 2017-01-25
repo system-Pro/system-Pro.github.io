@@ -16,7 +16,7 @@ $(function(){
 	var $allPanels = $('.myAccordion__text');
 	$allPanels.not(":eq(0)").hide();
 	$allHead.click(function(){
-	 	$allPanels.not(this).slideUp('ease-in-out');
+	 	$allPanels.not(this).finish('').slideUp('ease-in-out').delay(400);
 		$(this).next().slideDown('ease-in-out');
 		$allHead.find('.fa-minus').removeClass('fa-minus');
 		$allHead.find('.myAccordion__title--active').removeClass('myAccordion__title--active');
