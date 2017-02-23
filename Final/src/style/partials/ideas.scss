@@ -1,0 +1,111 @@
+.ideas{
+  margin-top: 38px;
+  text-align: center;
+  @include tablet{
+    margin-top: 98px;
+    letter-spacing: -0.1px;
+  }
+  &_title{
+    margin: 0 auto 20px;
+    height: 44px;
+    color: #333;
+    font-size: 22px;
+    @extend %MontserratBold;
+    @include tablet{
+      margin: 0 auto 16px;
+    }
+  }
+  &_title-second{
+    margin-top: 26px;
+    @include tablet{
+      margin-top: 75px;
+      margin-bottom: 14px;
+    }
+  }
+  &_grid{
+    margin: 0;
+    font-size: 0;
+  }
+  &_griditem{
+    position: relative;
+    margin-bottom: 10px;
+    height: 120px;
+    width: 100%;
+    border-radius: 4px;
+    @extend %background;
+    @include tablet{
+      margin-bottom: 20px;
+      height: 310px;
+    }
+  }
+  &_gridparagraph{
+    overflow: hidden;
+    width: 80%;
+    max-height: 48px;
+    text-align: center;
+    position: absolute;
+    color: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 22px;
+    @extend %MontserratBold;
+  }
+  &_interests{
+    height: 18px;
+    color: #333;
+    font-size: 18px;
+    @extend %RobotoLight;
+    @include tablet{
+      margin-top: 14px;
+    }
+  }
+  &_question{
+    margin-top: 18px;
+    width: 280px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 #eee;
+    color: #999;
+    font-family: Roboto;
+    font-size: 16px;
+    padding-left: 10px;
+    @extend %RobotoLight;
+    @include tablet{
+      margin-top: 40px;
+      width: 240px;
+      margin-right: 6px;
+    }
+  }
+  &_search{
+    margin-top: 10px;
+    width: 280px;
+    height: 40px;
+    background-color: #ff4e50;
+    border-radius: 20px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    border: none;
+    @extend %MontserratBold;
+    &:hover{
+      background: #cc3e40;
+      cursor: pointer;
+    }
+    @include tablet{
+      width: 160px;
+    }
+  }
+  @include tablet{
+    &_gridsizer,
+    &_griditem { width: 31.5%; }
+    &_gridgutter { width: 20px; }
+    &_griditem-2x { width: 65.5%; }
+  }
+}

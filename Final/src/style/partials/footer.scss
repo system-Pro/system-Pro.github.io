@@ -1,0 +1,118 @@
+.footer_line{
+  margin-top: 40px;
+  width: 100%;
+  height: 4px;
+  background-color: #ff4e50;
+  @include tablet{
+    margin-top: 100px;
+    margin-bottom: 37px;
+  }
+}
+.footer{
+  font-size: 0;
+  height: 180px;
+  text-align: center;
+  @include tablet{
+    height: 196px;
+    text-align: left;
+  }
+  &_title{
+    margin-top: 15px;
+    height: 16px;
+    color: #ff4e50;
+    font-size: 16px;
+    letter-spacing: 1px;
+    @extend %up;
+    @extend %MontserratBold;
+    @include tablet{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding-left: 16px;
+    }
+  }
+  &_company{
+    margin-top: 15px;
+    color: #333;
+    font-size: 14px;
+    @extend %MontserratBold;
+    @include tablet{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding-left: 16px;
+    }
+  }
+  &_list{
+    margin-top: 5px;
+  }
+  &_item{
+    display: inline-block;
+    vertical-align: top;
+    @include tablet{
+      display: block;
+    }
+  }
+  &_link{
+    height: 14px;
+    color: #666;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 5px;
+    @extend %RobotoLight;
+    display: block;
+    &:hover{
+      text-decoration: underline;
+      color: 666;
+    }
+    @include tablet{
+      margin-top: 10px;
+    }
+  }
+  &_partners{
+    margin-top: 18px;
+    color: #333;
+    font-size: 14px;
+    @extend %MontserratBold;
+    @include tablet{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    }
+  }
+  &_designed{
+    margin-top: 15px;
+    height: 8px;
+    color: #ccc;
+    letter-spacing: 0.6px;
+    font-size: 10px;
+    @extend %up;
+    @extend %MontserratBold;
+    @include tablet{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding-left: 16px;
+    }
+  }
+  &_designedby{
+    margin: 10px auto 0;
+    width: 110px;
+    height: 24px;
+    background: {
+      image: url('../img/designed.png');
+    }
+  }
+}

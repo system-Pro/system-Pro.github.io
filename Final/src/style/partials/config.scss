@@ -1,0 +1,76 @@
+// VARIABLES
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 960px;
+
+// CSS
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, input{
+    outline: none;
+    text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+.mainContainer{
+  max-width: $desktop;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+// @EXTEND
+%MontserratRegular{
+  font-family: 'Montserrat-Regular', sans-serif;
+}
+%MontserratBold{
+  font-family: 'Montserrat-Bold', sans-serif;
+}
+%RobotoLight{
+  font-family: 'Roboto-Light', sans-serif;
+}
+%up{
+    text-transform: uppercase;
+}
+%background{
+  background: {
+    color: #d1d1d0;
+    repeat: no-repeat;
+    position: center center;
+    size: cover;
+  }
+}
+
+// @INCLUDE
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media (max-width: $tablet - 1) { @content; }
+  }
+  @else if $media == tablet {
+    @media (min-width: $tablet) { @content; }
+  }
+  @else if $media == desktop {
+    @media (min-width: $desktop) { @content; }
+  }
+}
+@mixin mobile {
+  @include respond-to(mobile) {
+    @content
+  }
+}
+@mixin tablet {
+  @include respond-to(tablet) {
+    @content
+  }
+}
+@mixin desktop {
+  @include respond-to(desktop) {
+    @content
+  }
+  .old-ie & {
+    @content
+  }
+}

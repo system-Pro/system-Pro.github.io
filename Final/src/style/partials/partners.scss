@@ -1,0 +1,136 @@
+.partners{
+  margin-top: 35px;
+  text-align: center;
+  font-size: 0;
+  @include tablet{
+    margin-top: 96px;
+  }
+
+  &_title{
+    margin: 0 auto;
+    width: 258px;
+    height: 48px;
+    color: #333;
+    font-size: 22px;
+    letter-spacing: -0.3px;
+    margin-bottom: 18px;
+    @extend %MontserratBold;
+    @include tablet{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  @include tablet{
+    &_line{
+      margin: 0 auto;
+      display: inline-block;
+      vertical-align: top;
+      width: 255px;
+    }
+     .partners_each:last-child{
+        margin-top: 24px;
+      }
+  }
+  @include desktop{
+    &_line{
+      width: 50%;
+    }
+    .partners_each:last-child{
+        margin-top: 0;
+      }
+  }
+  &_each{
+    margin-bottom: 27px;
+    @include tablet{
+      margin: 0;
+    }
+    @include desktop{
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  &_photo{
+    background: #d1d1d0;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  &_photo-el1{
+    @include sprite($partner1);
+  }
+  &_photo-el2{
+    @include sprite($partner2);
+  }
+  &_photo-el3{
+    @include sprite($partner3);
+  }
+  &_photo-el4{
+    @include sprite($partner4);
+  }
+  &_photo{
+    width: 120px;
+    height: 120px;
+  }
+  &_logo{
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+  }
+  &_logo-el1{
+    @include sprite($partner1-logo);
+  }
+  &_logo-el2{
+    @include sprite($partner2-logo);
+  }
+  &_logo-el3{
+    @include sprite($partner3-logo);
+  }
+  &_logo-el4{
+    @include sprite($partner4-logo);
+  }
+  &_name{
+    max-width: 220px;
+    margin: 20px auto 0;
+    height: 14px;
+    color: #333;
+    font-size: 14px;
+    @extend %MontserratBold;
+  }
+  &_about{
+    margin: 16px auto 0;
+    max-width: 220px;
+    color: #666;
+    font-size: 14px;
+    @extend %RobotoLight;
+    @include tablet{
+      height: 66px;
+      overflow: hidden;
+    }
+  }
+  &_other{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 38px;
+    color: #ff4e50;
+    font-size: 14px;
+    @extend %MontserratBold;
+    width: 280px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    background: none;
+    &:hover{
+      background-color: #ff4e50;
+      color: white;
+      cursor: pointer;
+    }
+    @include tablet{
+      margin: 0 auto;
+      display: block;
+      margin-top: 34px;
+      width: 192px;
+    }
+  }
+}
