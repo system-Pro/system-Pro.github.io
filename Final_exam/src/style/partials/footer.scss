@@ -114,5 +114,8 @@
     background: {
       image: url('../img/designed.png');
     }
+    @include tablet{
+      margin-top: 20px;
+    }
   }
 }

@@ -40,6 +40,9 @@
       margin-left: 10px;
     }
   }
+  @include desktop{
+    width: 300px;
+  }
   .swiper-slide{
     border-radius: 4px;
     overflow: hidden;
