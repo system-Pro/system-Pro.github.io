@@ -1,7 +1,7 @@
 ;'use strict';
 var splitWord = 15;
 var base = [
-  {'abide abode abode' : 'пребывать, придерживаться чего-либо'},
+  {'abide abode abode' : 'соблюдать, пребывать, придерживаться чего-либо'},
   {'arise arose arisen' : 'возникать, подниматься'},
   {'awake awoke awaked' : 'будить, просыпаться'},
   {'be was(were) been' : 'быть, являться'},
@@ -10,12 +10,13 @@ var base = [
   {'become became become' : 'становиться, делаться'},
   {'befall befell  befallen' : 'случаться, происходить, приключиться'},
   {'begin began begun' : 'начинать(ся)'},
-  {'behold beheld beheld' : 'вглядываться, замечать'},
-  {'bend bent bent' : 'гнуть(ся), сгибать(ся)'},
+  {'behold beheld beheld' : 'вглядываться, замечать, увивел'},
+  {'bend bent bent' : 'гнуть(ся), сгибать(ся), согнуть'},
   {'beseech besought besought' : 'умолять, упрашивать'},
   {'beset beset beset' : 'окружать, осаждать'},
-  {'bet bet bet' : 'держать пари'},
+  {'bet bet bet' : 'ставка, держать пари'},
   {'bid bid bid' : 'предлагать цену, велеть, просить'},
+
   {'bind bound bound' : 'связывать, привязывать'},
   {'bite bit bitten' : 'кусать(ся)'},
   {'bleed bled bled' : 'кровоточить, истекать кровью'},
@@ -31,6 +32,7 @@ var base = [
   {'can could could' : "мочь физически"},
   {"cast   cast   cast" : "бросать, лить (металл)"},
   {"catch caught caught" : "ловить, схватывать"},
+
   {"choose chose chosen" : "выбирать"},
   {"cling clung clung" : "прилипать, цеплять, льнуть"},
   {"cleave cleft cloven" : "рассечь, расколоть"},
@@ -46,6 +48,7 @@ var base = [
   {"do(does) did done" : "делать"},
   {"draw drew drawn" : "тащить, чертить"},
   {"dream dreamt dreamt " : "видеть сны, мечтать"},
+
   {"drink drank drunk " : "пить, выпивать"},
   {"drive drove driven " : "ехать, везти, водить, гнать"},
   {"dwell dwelt dwelt " : "обитать, пребывать, задерживаться на чем-либо"},
@@ -61,6 +64,7 @@ var base = [
   {"fly flew flown " : "летать, пролетать"},
   {"forbid forbade forbidden " : "запрещать"},
   {"forecast forecast(forecasted) forecast(forecasted) " : "предвидеть, предсказывать"},
+
   {"forget forgot forgotten " : "забывать"},
   {"forego forewent foregone " : "отказываться, воздерживаться"},
   {"foretell foretold foretold " : "предсказывать, прогнозировать"},
@@ -76,6 +80,7 @@ var base = [
   {"hang hung(hanged) hung(hanged)" : "висеть, вешать"},
   {"have had had " : "иметь, обладать"},
   {"hew hewed hewed(hewn) " : "рубить, тесать"},
+
   {"hear heard heard " : "слышать"},
   {"hide hid hidden " : "прятать, прятаться"},
   {"hit hit hit " : "ударять, поражать"},
@@ -91,6 +96,7 @@ var base = [
   {"leap leapt(leaped) leapt(leaped) " : "прыгать"},
   {"learn learnt(learned) learnt(learned) " : "учиться, узнавать"},
   {"leave left left " : "оставлять, уезжать"},
+
   {"lend lent lent" : "одалживать, давать взаймы"},
   {"let let let" : "позволять, сдавать в наём"},
   {"lie lay lain" : "лежать"},
@@ -106,6 +112,7 @@ var base = [
   {"mow   mowed   mown" : "косить"},
   {'overtake  overtook  overtaken' : 'догнать'},
   {'pay   paid  paid' : 'платить'},
+
   {'prove   proved  proved(proven)' : 'доказывать, удостоверять'},
   {'put   put   put' : 'класть'},
   {'quit  quit(quitted)   quit(quitted)' : 'оставлять, покидать'},
@@ -121,6 +128,7 @@ var base = [
   {'see   saw   seen' : 'видеть'},
   {'seek  sought  sought' : 'искать'},
   {'sell  sold  sold' : 'продавать'},
+
   {'send  sent  sent' : 'посылать, отправлять'},
   {'set   set   set' : 'помещать, ставить'},
   {'sew   sewed   sewed(sewn)' : 'шить'},
@@ -136,6 +144,7 @@ var base = [
   {'shrink  shrank(shrunk)  shrunk' : 'сокращаться, сжиматься, отскочить, отпрянуть'},
   {'shut  shut  shut' : 'закрыть, закрывать, закрыться'},
   {'sing  sang  sung' : 'петь'},
+
   {'sink  sank  sunk' : 'опускаться, погружаться, тонуть'},
   {'sit   sat   sat' : 'сидеть'},
   {'slay  slew  slain' : 'убивать, уничтожать'},
@@ -151,6 +160,7 @@ var base = [
   {'spend   spent   spent' : 'тратить, истощать'},
   {'spill   spilt   spilt' : 'проливать, пролить'},
   {'spin  spun  spun' : 'прясть, плести, крутить'},
+
   {'spit  spat  spat' : 'плевать, насаживать, натыкать, про-'},
   {'split   split   split' : 'раскалывать, расщеплять'},
   {'spoil   spoilt(spoiled)   spoilt(spoiled)' : 'портить, баловать'},
@@ -166,6 +176,7 @@ var base = [
   {'strike  struck  struck' : 'ударять, поражать, бастовать'},
   {'string  strung  strung' : 'связывать, натягивать, нанизывать'},
   {'strive  strove  striven' : 'стремиться, стараться'},
+
   {'swear   swore   sworn' : 'клясться, присягать, браниться'},
   {'sweep   swept   swept' : 'подметать, мести'},
   {'swell   swelled   swollen(swelled)' : 'пухнуть, раздуваться, набухать'},
@@ -181,6 +192,7 @@ var base = [
   {'tread   trod  trod(trodden)' : 'ступать'},
   {'unbend  unbent  unbent' : 'разгибаться'},
   {'undergo   underwent   undergone' : 'испытывать, переносить'},
+
   {'understand  understood  understood' : 'понимать'},
   {'undertake   undertook   undertaken' : 'предпринимать, гарантировать'},
   {'upset   upset   upset' : 'опрокидывать, обжимать'},
