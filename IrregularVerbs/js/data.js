@@ -1,5 +1,4 @@
 ;'use strict';
-var splitWord = 15;
 var base = [
   {'abide abode abode' : 'соблюдать, пребывать, придерживаться чего-либо'},
   {'arise arose arisen' : 'возникать, подниматься'},
